@@ -11,6 +11,7 @@ let contacts = [
     { id: 1, name: "Aditi", phone: "98765 43210", email: "aditi@example.com" },
     { id: 2, name: "Rohan Meheta", phone: "91234 56789", email: "rohan@example.com" },
     { id: 3, name: "Rohan", phone: "91234 56789", email: "rohan@example.com" },
+    { id: 3, name: "Rohan", phone: "91234 56789", email: "rohan@example.com" },
 ];
 // API 1
 app.get("/api/contacts", (req, res) => {
