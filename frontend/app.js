@@ -39,5 +39,20 @@ async function loadContacts() {
     renderContacts()
 }
 
+form.addEventListener("submit", async (event) => {
+    event.preventDefault()
+    await fetch(APP_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            name: nameInput.value,
+            phone: phoneInput.value,
+            email: emailInput.value
+        })
+    })
+    form.reset()
+    loadContacts()
+})
+
 loadContacts()
 
